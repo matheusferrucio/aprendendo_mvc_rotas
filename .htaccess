@@ -1,0 +1,10 @@
+# Habilita o mecanismo de reescrita
+RewriteEngine On
+#RewriteBase /
+
+# Só reescreve se NÃO for arquivo nem diretório existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Captura toda a URL e envia para index.php, preservando parâmetros
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
