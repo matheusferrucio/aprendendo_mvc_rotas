@@ -1,5 +1,6 @@
 # Habilita o mecanismo de reescrita
 RewriteEngine On
+
 #RewriteBase /
 
 # Só reescreve se NÃO for arquivo nem diretório existente
