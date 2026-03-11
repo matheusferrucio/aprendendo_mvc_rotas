@@ -1,16 +1,16 @@
 <?php
    namespace Controllers;
 
-   use \Views\ContatoView as Contato;
+   use \Views\MainView as View;
 
    class ContatoController extends Controller
    {
       public function __construct() {
-         $this->view = new Contato('contato');
+         $this->view = new View('contato');
       }
       
       public function executar() {
-         $this->view->renderizar();
+         $this->view->renderizar(['titulo' => 'Contato']);
       }
    }
    
