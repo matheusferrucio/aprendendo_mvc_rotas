@@ -1,4 +1,7 @@
 <?php
+   // Constante com caminho absolute para não ocorrer conflito na hora de linkar arquivos 
+   define('INCLUDE_PATH_FULL', 'http://localhost/curso_php_jedai/aprendendo_mvc_rotas/views/pages/');
+
    class application
    {
       public function executar() {

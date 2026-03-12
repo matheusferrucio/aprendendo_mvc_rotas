@@ -7,6 +7,10 @@
         private string $header;
         private string $footer;
         
+        const titulo = 'Projeto MVC';
+
+        public $menuItens = ['Home', 'Sobre', 'Contato'];
+        
         public function __construct(string $fileName, string $header = 'header', string $footer = 'footer') {
             $this->fileName = $fileName;
             $this->header   = $header;
